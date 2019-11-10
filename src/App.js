@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+//import ReactDOM from "react-dom";
 
 //const alvaro = this.props.value;
 class Square extends React.Component {
@@ -7,7 +7,9 @@ class Square extends React.Component {
     return (
       <button
         className="square"
-        onClick={() => alert("click " + this.props.value)}
+        onClick={() => {
+          alert("Hey");
+        }}
       >
         {this.props.value}
       </button>
